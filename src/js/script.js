@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Simulated Audio State hello
+// Simulated Audio State
 let isPlaying = false;
 let progressInterval = null;
 let progressPercent = 30; // Start value
@@ -25,7 +25,7 @@ function startProgress() {
     progressInterval = setInterval(() => {
         if (progressPercent < 100) {
             progressPercent += 0.5;
-            progress.style.width = ${progressPercent}%;
+            progress.style.width = `${progressPercent}%`;
         } else {
             stopProgress();
             togglePlayPause(false);

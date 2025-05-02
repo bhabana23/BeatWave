@@ -133,22 +133,6 @@ header{
   flex-shrink: 0;
 }
 
-.progress-bar {
-  width: 100%;
-  background: #ccc;
-  height: 6px;
-  border-radius: 4px;
-  overflow: hidden;
-  position: relative;
-}
-
-.progress {
-  height: 100%;
-  width: 0%;
-  background: #1db954; /* Spotify green */
-  transition: width 1s linear;
-}
-
 
 .song-image img {
   width: 100%;
