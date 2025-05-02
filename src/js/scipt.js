@@ -12,7 +12,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// Simulated Audio State
+// Simulated Audio State hello
 let isPlaying = false;
 let progressInterval = null;
 let progressPercent = 30; // Start value
