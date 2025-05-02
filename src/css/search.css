@@ -1,0 +1,215 @@
+:root {
+    --gradient-purple: linear-gradient(to right, #5038a1, #8557e6);
+    --gradient-pink: linear-gradient(to right, #b03060, #e66465);
+    --gradient-green: linear-gradient(to right, #1db954, #4ade80);
+    --gradient-violet: linear-gradient(to right, #8e44ad, #bf6ee0);
+    --gradient-red: linear-gradient(to right, #c0392b, #e74c3c);
+    --gradient-yellow: linear-gradient(to right, #f39c12, #f1c40f);
+
+    --bg-dark: #18181b;
+    --bg-medium: #27272a;
+    --bg-light: #3f3f46;
+    --text-light: #ffffff;
+    --text-muted: #cccccc;
+  }
+
+  body.light-mode {
+    --bg-dark: #f9f9f9;
+    --bg-medium: #eeeeee;
+    --bg-light: #dddddd;
+    --text-light: #121212;
+    --text-muted: #444444;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.5;
+  }
+
+  .app-container {
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 120px;
+  }
+
+  .search-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .search-header input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    margin-right: 1rem;
+  }
+
+  .filter-btn {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background: var(--gradient-purple);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: background 0.3s ease;
+  }
+
+  .filter-btn.active {
+    background: var(--gradient-pink);
+  }
+
+  .results-list ul {
+    list-style: none;
+    padding: 0 1.5rem;
+  }
+
+  .results-list li {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-medium);
+    padding: 1rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: background 0.3s ease;
+  }
+
+  .results-list li:hover {
+    background-color: var(--bg-light);
+  }
+
+  .results-list img {
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+
+  .track-info {
+    flex: 1;
+  }
+
+  .play-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: var(--text-light);
+    cursor: pointer;
+  }
+
+  .music-player {
+    position: fixed;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-medium);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    z-index: 10;
+  }
+
+  .song-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .song-image img {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    margin-right: 1rem;
+  }
+
+  .player-controls {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .control-buttons button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+  }
+
+  .progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .progress-bar {
+    flex: 1;
+    height: 4px;
+    background-color: var(--bg-light);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .progress {
+    width: 30%;
+    height: 100%;
+    background: var(--gradient-purple);
+  }
+
+  .volume-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .volume-bar {
+    width: 60px;
+    height: 4px;
+    background-color: var(--bg-light);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .volume-level {
+    width: 70%;
+    height: 100%;
+    background: var(--gradient-purple);
+  }
+
+  .bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--bg-dark);
+    display: flex;
+    justify-content: space-around;
+    padding: 0.75rem 0;
+  }
+
+  .nav-btn, .nav-item {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .nav-btn.active, .nav-item.active {
+    color: var(--text-light);
+  }

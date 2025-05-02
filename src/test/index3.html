@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoundWave - Discover Your Sound</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Floating Sidebar -->
+  <div class="floating-sidebar" id="sidebar">
+    <!-- Sidebar Header with Logo -->
+    <div class="sidebar-header">
+      <a href="#" class="logo">SoundWave</a>
+    </div>
+    
+    <!-- Sidebar Search -->
+    <div class="sidebar-search">
+      <div class="search-container">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search...">
+      </div>
+    </div>
+    
+    <!-- Navigation Links -->
+    <nav class="sidebar-nav">
+      <ul class="nav-items">
+        <!-- Active Navigation Item -->
+        <li class="nav-item active">
+          <a href="#">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <i class="fas fa-compass"></i>
+            <span>Explore</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <i class="fas fa-book"></i>
+            <span>Library</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    
+    <!-- Sidebar Footer with User Info -->
+    <div class="sidebar-footer">
+      <button class="user-button">
+        <div class="avatar">
+          <img src="https://via.placeholder.com/32" alt="User">
+        </div>
+        <span>John Doe</span>
+      </button>
+    </div>
+  </div>
+  
+  <!-- Mobile Menu Button -->
+  <button class="mobile-menu-btn" id="mobileMenuBtn">
+    <i class="fas fa-bars"></i>
+  </button>
+  
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Welcome Section -->
+    <h1 class="welcome-title">Welcome Back, John</h1>
+    
+    <!-- Trending Track Section -->
+    <section class="trending-track">
+      <!-- Trending Content -->
+      <div class="trending-content">
+        <!-- Track Information -->
+        <div class="trending-info">
+          <div class="trending-badge">TRENDING NOW</div>
+          <h2>Blinding Lights</h2>
+          <p class="artist">The Weeknd</p>
+          <p class="description">
+            Experience the synth-wave inspired hit that topped charts worldwide. A perfect blend of 80s nostalgia and modern production.
+          </p>
+          <div class="trending-actions">
+            <button class="btn btn-primary">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+            <button class="btn btn-outline">
+              <i class="fas fa-heart"></i> Add to Favorites
+            </button>
+          </div>
+        </div>
+        
+        <!-- Track Cover -->
+        <div class="trending-cover">
+          <div class="cover-art">
+            <img src="https://via.placeholder.com/256" alt="Blinding Lights - The Weeknd">
+            <div class="cover-overlay"></div>
+            <div class="cover-controls">
+              <div class="play-icon">
+                <i class="fas fa-play"></i>
+              </div>
+              <div class="track-info">
+                <p class="track-name">Blinding Lights</p>
+                <p class="track-duration">3:20</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Two Column Layout -->
+    <div class="two-column">
+      <!-- Recently Played Section -->
+      <section class="recently-played panel">
+        <!-- Panel Header -->
+        <div class="panel-header">
+          <div class="panel-title">
+            <i class="fas fa-clock"></i>
+            <h2>Recently Played</h2>
+          </div>
+          <a href="#" class="view-all">View All</a>
+        </div>
+        
+        <!-- Track List -->
+        <div class="track-list">
+          <!-- Individual Track Items -->
+          <div class="track-item">
+            <div class="track-cover">
+              <img src="https://via.placeholder.com/40" alt="Blinding Lights">
+              <div class="track-play-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="track-details">
+              <h3>Blinding Lights</h3>
+              <p>The Weeknd</p>
+            </div>
+            <div class="track-duration">3:20</div>
+          </div>
+          
+          <div class="track-item">
+            <div class="track-cover">
+              <img src="https://via.placeholder.com/40" alt="As It Was">
+              <div class="track-play-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="track-details">
+              <h3>As It Was</h3>
+              <p>Harry Styles</p>
+            </div>
+            <div class="track-duration">2:47</div>
+          </div>
+          
+          <div class="track-item">
+            <div class="track-cover">
+              <img src="https://via.placeholder.com/40" alt="Bad Habit">
+              <div class="track-play-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="track-details">
+              <h3>Bad Habit</h3>
+              <p>Steve Lacy</p>
+            </div>
+            <div class="track-duration">3:52</div>
+          </div>
+          
+          <div class="track-item">
+            <div class="track-cover">
+              <img src="https://via.placeholder.com/40" alt="Heat Waves">
+              <div class="track-play-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="track-details">
+              <h3>Heat Waves</h3>
+              <p>Glass Animals</p>
+            </div>
+            <div class="track-duration">3:58</div>
+          </div>
+          
+          <div class="track-item">
+            <div class="track-cover">
+              <img src="https://via.placeholder.com/40" alt="Stay">
+              <div class="track-play-overlay">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+            <div class="track-details">
+              <h3>Stay</h3>
+              <p>The Kid LAROI, Justin Bieber</p>
+            </div>
+            <div class="track-duration">2:21</div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Genres Section -->
+      <section class="genres panel">
+        <!-- Panel Header -->
+        <div class="panel-header">
+          <div class="panel-title">
+            <i class="fas fa-music"></i>
+            <h2>Browse Genres</h2>
+          </div>
+        </div>
+        
+        <!-- Genres Grid -->
+        <div class="genres-grid">
+          <!-- Genre Items -->
+          <div class="genre-item pink">
+            <h3>Pop</h3>
+          </div>
+          <div class="genre-item blue">
+            <h3>Hip Hop</h3>
+          </div>
+          <div class="genre-item red">
+            <h3>Rock</h3>
+          </div>
+          <div class="genre-item purple">
+            <h3>Electronic</h3>
+          </div>
+          <div class="genre-item yellow">
+            <h3>R&B</h3>
+          </div>
+          <div class="genre-item green">
+            <h3>Jazz</h3>
+          </div>
+          <div class="genre-item cyan">
+            <h3>Classical</h3>
+          </div>
+          <div class="genre-item orange">
+            <h3>Country</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+    
+    <!-- Artists Section -->
+    <section class="artists-section">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-title">
+          <i class="fas fa-microphone"></i>
+          <h2>Popular Artists</h2>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="artistPrev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next" id="artistNext">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Artists Carousel -->
+      <div class="carousel-container" id="artistsCarousel">
+        <div class="carousel-track">
+          <!-- Artist Cards -->
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Taylor Swift">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Taylor Swift</h3>
+            <p>82M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="The Weeknd">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>The Weeknd</h3>
+            <p>76M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Billie Eilish">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Billie Eilish</h3>
+            <p>68M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Drake">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Drake</h3>
+            <p>65M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Ariana Grande">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Ariana Grande</h3>
+            <p>62M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Ed Sheeran">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Ed Sheeran</h3>
+            <p>59M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Justin Bieber">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Justin Bieber</h3>
+            <p>57M followers</p>
+          </div>
+          
+          <div class="artist-card">
+            <div class="artist-image">
+              <img src="https://via.placeholder.com/180" alt="Dua Lipa">
+              <div class="artist-play-overlay">
+                <button class="play-btn">
+                  <i class="fas fa-play"></i>
+                </button>
+              </div>
+            </div>
+            <h3>Dua Lipa</h3>
+            <p>54M followers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Playlists Section -->
+    <section class="playlists-section">
+      <!-- Section Header -->
+      <div class="section-header">
+        <div class="section-title">
+          <i class="fas fa-list-music"></i>
+          <h2>Featured Playlists</h2>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn prev" id="playlistPrev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next" id="playlistNext">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      
+      <!-- Playlists Carousel -->
+      <div class="carousel-container" id="playlistsCarousel">
+        <div class="carousel-track">
+          <!-- Playlist Cards -->
+          <div class="playlist-card purple">
+            <div class="playlist-content">
+              <div class="playlist-image">
+                <img src="https://via.placeholder.com/80" alt="Chill Lo-Fi Beats">
+              </div>
+              <div class="playlist-info">
+                <h3>Chill Lo-Fi Beats</h3>
+                <p class="playlist-description">Relaxing beats to study and focus</p>
+                <div class="playlist-meta">
+                  <span>42 tracks</span>
+                  <span class="separator">•</span>
+                  <span>2hr 15min</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-play purple">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+          
+          <div class="playlist-card red">
+            <div class="playlist-content">
+              <div class="playlist-image">
+                <img src="https://via.placeholder.com/80" alt="Workout Motivation">
+              </div>
+              <div class="playlist-info">
+                <h3>Workout Motivation</h3>
+                <p class="playlist-description">High energy tracks to power your workout</p>
+                <div class="playlist-meta">
+                  <span>38 tracks</span>
+                  <span class="separator">•</span>
+                  <span>1hr 45min</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-play red">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+          
+          <div class="playlist-card blue">
+            <div class="playlist-content">
+              <div class="playlist-image">
+                <img src="https://via.placeholder.com/80" alt="Indie Discoveries">
+              </div>
+              <div class="playlist-info">
+                <h3>Indie Discoveries</h3>
+                <p class="playlist-description">Fresh indie tracks you need to hear</p>
+                <div class="playlist-meta">
+                  <span>35 tracks</span>
+                  <span class="separator">•</span>
+                  <span>2hr 05min</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-play blue">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+          
+          <div class="playlist-card green">
+            <div class="playlist-content">
+              <div class="playlist-image">
+                <img src="https://via.placeholder.com/80" alt="Electronic Essentials">
+              </div>
+              <div class="playlist-info">
+                <h3>Electronic Essentials</h3>
+                <p class="playlist-description">The best in electronic music</p>
+                <div class="playlist-meta">
+                  <span>45 tracks</span>
+                  <span class="separator">•</span>
+                  <span>3hr 10min</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-play green">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+          
+          <div class="playlist-card indigo">
+            <div class="playlist-content">
+              <div class="playlist-image">
+                <img src="https://via.placeholder.com/80" alt="Hip Hop Hits">
+              </div>
+              <div class="playlist-info">
+                <h3>Hip Hop Hits</h3>
+                <p class="playlist-description">Top hip hop tracks of the moment</p>
+                <div class="playlist-meta">
+                  <span>50 tracks</span>
+                  <span class="separator">•</span>
+                  <span>2hr 50min</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-play indigo">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+          
+          <div class="playlist-card amber">
+            <div class="playlist-content">
+              <div class="playlist-image">
+                <img src="https://via.placeholder.com/80" alt="Acoustic Favorites">
+              </div>
+              <div class="playlist-info">
+                <h3>Acoustic Favorites</h3>
+                <p class="playlist-description">Stripped back acoustic versions</p>
+                <div class="playlist-meta">
+                  <span>32 tracks</span>
+                  <span class="separator">•</span>
+                  <span>1hr 55min</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-play amber">
+              <i class="fas fa-play"></i> Play Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Music Player -->
+  <div class="music-player zinc" id="musicPlayer">
+    <div class="player-container">
+      <!-- Song Info -->
+      <div class="player-song-info">
+        <div class="song-cover">
+          <img src="https://via.placeholder.com/48" alt="Blinding Lights">
+        </div>
+        <div class="song-details">
+          <h4>Blinding Lights</h4>
+          <p>The Weeknd</p>
+        </div>
+        <button class="player-btn like-btn" id="likeBtn">
+          <i class="far fa-heart"></i>
+        </button>
+      </div>
+      
+      <!-- Player Controls -->
+      <div class="player-controls">
+        <div class="control-buttons">
+          <button class="player-btn">
+            <i class="fas fa-random"></i>
+          </button>
+          <button class="player-btn">
+            <i class="fas fa-step-backward"></i>
+          </button>
+          <button class="player-btn play-pause-btn" id="playPauseBtn">
+            <i class="fas fa-play"></i>
+          </button>
+          <button class="player-btn">
+            <i class="fas fa-step-forward"></i>
+          </button>
+          <button class="player-btn">
+            <i class="fas fa-redo"></i>
+          </button>
+        </div>
+        
+        <div class="progress-container">
+          <span class="time current-time">0:00</span>
+          <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+            <div class="progress-handle" id="progressHandle"></div>
+          </div>
+          <span class="time total-time">3:20</span>
+        </div>
+      </div>
+      
+      <!-- Volume Controls -->
+      <div class="player-volume">
+        <div class="volume-container">
+          <i class="fas fa-volume-up"></i>
+          <div class="volume-bar">
+            <div class="volume-level" id="volumeLevel"></div>
+            <div class="volume-handle" id="volumeHandle"></div>
+          </div>
+        </div>
+        <button class="player-btn">
+          <i class="fas fa-list"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .main-content {
+    display: flex;
+    flex: 1;
+  }
+  
+  .library {
+    width: 200px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+  }
+  
+  .songs-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .search {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #aaa;
+  }
+  
+  .song-list .song {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .player-controls {
+    background: #eee;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .song-info span {
+    margin: 0 10px;
+  }
+  
+  .controls button {
+    margin: 0 5px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .controls input[type="range"] {
+    vertical-align: middle;
+  }
+  
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ddd;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #bbb;
+  }
+  

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DJ Search - Music App</title>
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <div class="app-container">
+    <div class="search-header">
+      <input type="text" placeholder="Search DJ’s or mixes in Pop" aria-label="Search DJ’s or mixes" />
+      <button class="filter-btn">DJ’s</button>
+      <button class="filter-btn active">Mixes</button>
+    </div>
+
+    <div class="results-list">
+      <h3 style="padding: 0 1.5rem;">Popular DJ in POP <span class="genre">Genre</span></h3>
+      <ul>
+        <li>
+          <img src="https://via.placeholder.com/40" alt="Cover of The lost files by DJ Alvin" />
+          <div class="track-info">
+            <strong>The lost files</strong>
+            <span>DJ Alvin</span>
+          </div>
+          <button class="play-btn">▶</button>
+        </li>
+        <li>
+          <img src="https://via.placeholder.com/40" alt="Cover of Backdate metro mix by DJ Alvin" />
+          <div class="track-info">
+            <strong>Backdate metro mix</strong>
+            <span>DJ Alvin</span>
+          </div>
+          <button class="play-btn">▶</button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="music-player">
+      <div class="song-info">
+        <div class="song-image">
+          <img src="https://placehold.co/48" alt="Album cover">
+        </div>
+        <div class="song-details">
+          <h4>Song Title</h4>
+          <p>Artist Name</p>
+        </div>
+      </div>
+
+      <div class="player-controls">
+        <div class="control-buttons">
+          <button><i class="fas fa-random"></i></button>
+          <button><i class="fas fa-step-backward"></i></button>
+          <button class="play-button"><i class="fas fa-play"></i></button>
+          <button><i class="fas fa-step-forward"></i></button>
+          <button><i class="fas fa-redo"></i></button>
+        </div>
+        <div class="progress-container">
+          <span class="time">1:23</span>
+          <div class="progress-bar">
+            <div class="progress"></div>
+          </div>
+          <span class="time">3:45</span>
+        </div>
+      </div>
+
+      <div class="volume-control">
+        <button><i class="fas fa-volume-up"></i></button>
+        <div class="volume-bar">
+          <div class="volume-level"></div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active">
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-search"></i>
+        <span>Search</span>
+      </button>
+      <button class="nav-item">
+        <i class="fas fa-book"></i>
+        <span>Library</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

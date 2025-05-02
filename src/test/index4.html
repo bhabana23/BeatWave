@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music App Layout</title>
+  <link rel="stylesheet" href="4.css">
+</head>
+<body>
+  <div class="container">
+    
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="library">
+        <h3>Your Library</h3>
+        <label><input type="checkbox"> Liked Songs</label><br>
+        <label><input type="checkbox"> Chill Vibes</label><br>
+        <label><input type="checkbox"> Playlist 3</label>
+      </div>
+
+      <div class="songs-section">
+        <input type="text" class="search" placeholder="Search..." />
+        <div class="song-list">
+          <div class="song">Song Name</div>
+          <div class="song">Song Name</div>
+          <div class="song">Song Name</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Controls -->
+    <div class="player-controls">
+      <div class="song-info">
+        <input type="checkbox">
+        <span>Song Title</span>
+        <span>1:23</span>
+      </div>
+      <div class="controls">
+        <button>⏮</button>
+        <button>▶</button>
+        <button>⏭</button>
+        <input type="range" min="0" max="100" value="20">
+        <span>🔊</span>
+      </div>
+    </div>
+
+    <!-- Bottom Nav -->
+    <div class="bottom-nav">
+      <div>🏠<br>Home</div>
+      <div>🔍<br>Search</div>
+      <div>📚<br>Library</div>
+    </div>
+  </div>
+</body>
+</html>

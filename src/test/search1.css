@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px; /* Padding around the header */
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and search form */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.search-form {
+    display: flex; /* Use flexbox for the search form */
+}
+
+.search-input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px 0 0 4px; /* Rounded corners on the left */
+    outline: none; /* Remove outline */
+}
+
+.search-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #45a049; /* Darker green for button */
+    color: white;
+    border-radius: 0 4px 4px 0; /* Rounded corners on the right */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.search-button:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+}
